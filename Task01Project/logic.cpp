@@ -11,7 +11,7 @@ int recursion(int number) {
 		return number;
 	}
 
-	return recursion(number - 1) + number ;
+	return recursion(number - 1) + number;
 }
 
 int sum(int number) {
