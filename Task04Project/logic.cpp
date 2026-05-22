@@ -3,3 +3,22 @@
 // 
 // Необходимо спроектировать и реализовать программу, 
 // которая возвращает сумму кубов чисел от 1 до N.
+
+#include "logic.h"
+// 3
+int recursion(int number) {
+	if (number <= 1) {
+		return 1;
+	}
+
+	return recursion(number - 1) + number * number * number;
+}
+int sum_of_cubes(int number) {
+	if (number < 1) {
+		return -1;
+	}
+
+
+
+	return recursion(number);
+}
